@@ -29,7 +29,7 @@
   </tr>
   <tr ng-repeat="num in vm.todos">
     <td ng-click = "vm.displayTodo(num)">{{num.task}}</td>
-    <td>{{num.description}}</td>
+    <td ng-click = "vm.displayTodo(num)">{{num.description}}</td>
     <td  class="mark"><input type="checkbox" ng-model="num.completed"/></td>
     <td>{{num.completed}}</td>
   </tr>
